@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url('/social-proof-section-master/images/bg-pattern-top-mobile.svg'), url('/social-proof-section-master/images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw, 95vw;
+    background-position: top center, 50% -150%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1010px) {
+    body {
+        background-image: url('/social-proof-section-master/images/bg-pattern-top-desktop.svg'), url('/social-proof-section-master/images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 50vw 50vh, 90vw 115vh;
+        background-position: -15% -10%, right bottom;
+    }
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    padding-top: 50px;
+}
+
+@media (min-width: 1110px) {
+    .container {
+        padding: 50px 120px 100px 120px;
+    }
+}
+
+.description {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1010px) {
+    .description {
+        align-items: flex-start;
+    }
+}
+
+.sect1, .sect2, .user1, .user2, .user3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect2 {
+    margin-top: 15px;
+}
+
+@media (min-width: 1010px) {   
+    .sect2 .first {
+        margin-right: 175px;
+    }
+
+    .sect2 .second {
+        margin-right: 50px;
+    }
+
+    .sect2 .last {
+        margin-left: auto;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding: 0px 80px;
+}
+
+p {
+    text-align: center;
+    padding: 0px 30px;
+    color: hsl(303, 10%, 53%)   ;
+}
+
+@media (min-width: 1010px) {
+    h1, p {
+        text-align: left;
+    }
+
+    p {
+        padding-left: 0px;
+        line-height: 25px;
+    }
+
+    h1 {
+        padding: 0px 250px 0px 0px;
+        font-weight: 900;
+    }
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    width: 325px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+@media (min-width: 1010px) {
+    .rating {
+        flex-direction: row;
+        width: 445px;
+        gap: 7%;
+    }
+}
+
+.star-icon {
+    padding: 15px 0px 5px 0px;
+}
+
+@media (min-width: 1010px) {
+    .star-icon {
+        padding: 20px 0px;
+    }
+}
+
+.star-review {
+    padding: 5px 0px 15px 0px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+@media (min-width: 1010px) {
+    .star-review {
+        padding: 20px 0px;
+    }
+}
+
+.sect2 .last {
+    margin-bottom: 50px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    grid-gap: 18px;
+    margin-bottom: 100px;
+}
+
+.user1, .user2, .user3 {
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 10px;
+    margin: 0px 25px 0px 25px;
+}
+
+@media (min-width: 1010px) {
+    .user1, .user2, .user3 {
+        margin: 0px 5px 0px 5px;
+    }
+
+    .user2 {
+        transform: translateY(5%);
+    }
+
+    .user3 {
+        transform: translateY(10%);
+    }
+
+}
+
+.user-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    padding: 40px 30px 25px 35px
+}
+
+.card-header .name-category .name {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+.card-header .name-category .category {
+    color: hsl(333, 50%, 67%);
+}
+
+.testimonials-content {
+    text-align: left;
+    color: hsl(0, 0%, 100%);
+    line-height: 25px;
+    padding: 0px 20px 30px 35px;
+}
+
+br {
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 5px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
