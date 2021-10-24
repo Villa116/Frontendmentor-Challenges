@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-image: url('/fylo-data-storage-component-master/images/bg-mobile.png');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+        background-image: url('/fylo-data-storage-component-master/images/bg-desktop.png');
+        background-size:unset;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 0 135%;        
+    }
+}
+
+main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1000px) {
+    main {
+        display: inline-flex;
+        gap: 30px;
+    }
+}
+
+.action {
+    width: 325px;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    margin: 0 auto;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 100px;
+    padding: 40px;
+}
+
+@media (min-width: 1000px) {
+    .action {
+        margin-right: 0; 
+    }
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.icon {
+    margin-right: 15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+
+.document-image {
+    padding: 10px;
+}
+
+.folder-image {
+    padding: 12px;
+}
+
+.upload-image {
+    padding: 14px;
+}
+
+.storage-info {
+    background-color: hsl(228, 56%, 26%);
+    width: 325px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    color: hsl(243, 100%, 93%);
+    padding: 30px 30px;
+}
+
+@media (min-width: 1000px) {
+    .storage-info {
+        width: 540px;
+        height: 155px;
+        position: relative;
+        margin-left: 0;
+        margin-top: auto;
+        padding: 40px; 
+    }
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    p {
+        text-align: left;
+    }
+}
+
+.bottom-space {
+    margin-bottom: 20px;
+}
+
+.storage-bar {
+    width: 100%;
+    height: 20px;
+    background-color: hsla(229, 57%, 11%, 0.5);
+    border-radius: 50px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: linear-gradient(to right,  hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 195px;
+    height: 100%;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+@media (min-width: 1000px) {
+    .progress-bar {
+        width: 335px;
+    }
+}
+
+.indicator {
+    width: 10px;
+    height: 100%;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 100%;
+    margin-left: auto;
+}
+
+.storage-used {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.storage-left {
+    width: 180px;
+    height: 65px;
+    background-color: white;
+    transform: translate(23%, 25%);
+    border-radius: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+
+@media (min-width: 1000px) {
+    .storage-left {
+        position: absolute;
+        transform: translate(-100%, -225%);
+        border-bottom-right-radius: 0;
+        height: 70px;
+        z-index: 2;
+    }
+}
+
+.large-size {
+    font-size: 35px;
+    color: hsl(229, 57%, 11%);
+}
+
+.gray-text {
+    color: hsl(229, 7%, 55%);
+    text-transform: uppercase;
+}
+
+footer {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 1000px) {
+    .overlap {
+        position: absolute;
+        top: -1px;
+        left: 460px;
+        width: 40px;
+        height: 15px;
+        background-color: white;
+        transform: skewY(45deg);
+        z-index: 1;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; color: hsl(229, 7%, 55%); }
+.attribution a { color: pink; text-decoration: none;}
