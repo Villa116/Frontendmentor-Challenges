@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Villa116/Frontendmentor-Challenges/tree/main/four-card-feature-section-master)
+- Live Site URL: (https://eager-nobel-70d60a.netlify.app/fylo-data-storage-component-master/index.html)
 
 ## My process
 
