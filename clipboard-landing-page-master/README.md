@@ -33,8 +33,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Villa116/Frontendmentor-Challenges/tree/main/clipboard-landing-page-master)
+- Live Site URL: (https://eager-nobel-70d60a.netlify.app/clipboard-landing-page-master/index.html)
 
 ### Built with
 
