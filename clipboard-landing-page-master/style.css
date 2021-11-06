@@ -1,0 +1,439 @@
+  * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+  }
+
+  body {
+    background-image: url('/clipboard-landing-page-master/images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+      body {
+          background-image: url('/clipboard-landing-page-master/images/bg-header-desktop.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+  }
+
+  header {
+      margin-top: 120px;
+      margin-bottom: 70px;
+  }
+
+  .main-logo {
+      display: block;
+      margin: 0 auto;
+  }
+
+  main {
+      padding: 0px 15px;
+      margin-bottom: 130px;
+  }
+
+  article {
+      text-align: center;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  @media (min-width: 1200px) {
+      h1 {
+          font-size: 40px;
+      }
+  }
+
+  h1, h2, h3 {
+      margin-bottom: 20px;
+      color: hsl(210, 10%, 33%);
+  }
+
+  @media (min-width: 1200px) {
+    h2 {
+        font-size: 35px;
+    }
+  }
+  
+  p {
+      color: hsl(201, 11%, 66%);
+      line-height: 30px;
+  }
+
+  
+
+  #first-Para {
+      margin-bottom: 55px;
+  }
+
+  @media (min-width: 1200px) {
+      #first-Para, #last-para {
+          max-width: 650px;
+          margin: 0 auto;
+          margin-bottom: 55px;
+      }
+  }
+
+  .myButtons {
+      max-width: 470px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(227px, 1fr));
+      grid-gap: 16px;
+      margin: 0 auto;
+  }
+
+  .download {
+      width: 100%;
+      border-radius: 30px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      outline-offset: 4px;
+  }
+
+  .ios {
+    background-color: hsl(171, 66%, 35%);
+    box-shadow: 0px 1px 2px 2px hsla(171, 66%, 60%, 0.1),
+                0px 2px 4px 4px hsla(171, 66%, 60%, 0.1),
+                1px 4px 8px 8px hsla(171, 66%, 60%, 0.1);     
+  }
+
+  .mac {
+      background-color: hsl(233, 100%, 65%);
+      box-shadow: 0px 1px 2px 2px hsla(233, 100%, 75%, 0.1),
+                  0px 2px 4px 4px hsla(233, 100%, 75%, 0.1),
+                  1px 4px 8px 8px hsla(233, 100%, 75%, 0.1);     
+
+  }
+
+  .front {
+      display: block;
+      border-radius: 30px;
+      padding: 18px 0px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-size: 18px;
+      color: white;
+      font-weight: 600;
+      transform: translateY(-4px);
+  }
+
+  .ios .front {
+    background-color: hsl(171, 66%, 44%);
+  }
+
+  .ios .front:hover {
+      background-color: hsl(171, 56%, 58%);
+      transform: translateY(-6px);
+  }
+
+  .mac .front {
+      background-color: hsl(233, 100%, 69%);
+  }
+
+  .mac .front:hover {
+      background-color: hsl(233, 90%, 75%);
+      transform: translateY(-6px);
+  }
+
+  .download:active .front {
+      transform: translateY(-1px);
+  }
+
+
+  button.ios {
+    margin-bottom: 25px;
+  }
+
+  #first {
+      margin-bottom: 150px;
+  }
+
+  @media (min-width: 1200px) {
+      #second {
+          margin-bottom: 80px;
+      }
+  }
+
+  #second-para, #sixth-para {
+      margin-bottom: 70px;
+  }
+
+  @media (min-width: 1200px) {
+      #second-para, #sixth-para {
+          max-width: 650px;
+          margin: 0 auto;
+          margin-bottom: 70px;
+      }
+  }
+
+  .computer-pic {
+      width: 100%;
+      /* height: 240px; */
+      margin-bottom: 60px;
+  }
+
+
+  @media (min-width: 1200px) {
+      .image-tasks {
+          display: flex;
+          gap: 60px;
+      }
+
+      .computer-pic {
+          width: 100%;
+          position: relative;
+          left: -55px;
+      }
+
+      .task-group {
+          padding-right: 110px;
+          padding-top: 75px;
+      }
+
+      .task {
+          text-align: left;
+      }
+  }
+
+  #third-para, #fourth-para {
+      margin-bottom: 60px;
+  }
+
+
+  #fifth-para {
+      margin-bottom: 180px;
+  }
+
+  @media (min-width: 1200px) {
+    #third-para, #fourth-para, #fifth-para, #eighth-para, #ninth-para, #tenth-para {
+        font-size: 16px;
+    }
+  }
+
+  h3 {
+      font-size: 25px;
+  }
+
+  .tablet-phone {
+      width: 100%;
+      margin-bottom: 100px;
+  }
+
+  @media (min-width: 1200px) {
+      .phone-tablet {
+          padding: 0px 200px;
+      }
+
+      .tablet-phone {
+          margin-bottom: 70px;
+      }
+  }
+
+  #seventh-para {
+      margin-bottom: 90px;
+  }
+
+  @media(min-width: 1200px) {
+      #seventh-para {
+          margin-bottom: 60px;
+      }
+  }
+
+  .our-tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+      grid-gap: 60px;
+      justify-items: center;
+      align-items: center;
+  }
+
+  @media (min-width: 750px) {
+      .our-tools {
+          grid-gap: 20px;
+      }
+  }
+
+  .first-col, .second-col, .third-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .company-icon {
+      height: 40px;
+      margin-bottom: 35px;
+  }
+
+  .plain-text {
+      display: flex;
+      align-content: flex-end;  
+  }
+
+  .sneak-preview {
+      display: flex;
+      align-content: center;
+  }
+
+  @media (min-width: 1200px) {
+    #fourth {
+        padding: 0px 50px;
+    }
+}
+
+  .partners {
+      text-align: center;
+      margin-bottom: 180px;
+  }
+
+  @media (min-width: 1200px) {
+      .partners {
+          height: 60px;
+          display: inline-flex;
+          justify-content: space-around;
+          margin-bottom: 150px;
+      }
+
+      .company-logo {
+          width: 100%;
+      }
+
+      .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+
+  .company-logo {
+      margin: 0 auto;
+  }
+
+
+  .logo-space {
+      margin-bottom: 60px;
+  }
+
+  @media (min-width: 1200px) {
+      .logo-space {
+          margin-bottom: 0;
+      }
+  }
+
+  .clipboard-sect {
+      text-align: center;
+      padding: 0px 15px;
+      margin-bottom: 170px;
+  }
+
+  @media (min-width: 1200px) {
+      .clipboard-sect {
+          margin-bottom: 120px;
+      }
+  }
+
+  #last-para {
+      margin-bottom: 40px;
+  }
+
+  .container-links {
+      padding: 45px 90px;
+      background-color: hsl(201, 21%, 96%);
+      text-align: center;
+  }
+
+  .footer-links, .footer-spacing {
+      margin-bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+      .footer-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 0;
+      }
+
+      .footer-spacing {
+          margin-bottom: 20px;
+          margin-right: auto;
+      }
+
+      .left-spacing {
+          margin-right: auto;
+      }
+
+      .install-guide {
+          display: flex;
+          flex-direction: column;
+          margin-right: 300px;
+      }
+
+      .faqs-contact {
+          margin-right: 90px;
+      }
+
+      .policy-kit {
+          margin-right: 70px;
+      }
+  }
+
+  .social-media {
+      margin-top: 40px;
+  }
+
+  @media (min-width: 1200px) {
+      .social-media {
+          display: flex;
+          margin-top: 0;
+          align-items: center;
+      }
+  }
+
+  .app-logo {
+      margin-bottom: 40px;
+  }
+  
+  .small-logo {
+      width: 55px;
+  }
+
+  .icon-size {
+      font-size: 30px;
+  }
+
+  .fab {
+      color: hsl(210, 10%, 33%);
+  }
+
+  .right-margin {
+      margin-right: 35px;
+  }
+
+  @media (min-width: 1200px) {
+      .container-links {
+          display: flex;
+      }
+  }
+
+  @media (min-width: 1200px) {
+      .app-logo {
+          display: flex;
+          align-items: center;
+          margin-bottom: 0;
+          margin-right: 130px; 
+      }
+  }
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(241, 94%, 45%); text-decoration: none; }
