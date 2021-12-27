@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background: url('/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(193, 100%, 96%);
+}
+
+@media (min-width: 1000px) {
+    body {
+        background: url('/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg');
+        background-repeat: repeat;
+        background-size: auto;
+        background-color: hsl(193, 100%, 96%);
+        background-position: -20px -160px;
+    }
+}
+
+header {
+    margin: 45px 25px 125px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1000px) {
+    header {
+        margin: 45px 70px;
+    }
+    
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+
+img {
+    width: 100%;
+}
+
+.logo .app-logo {
+    width: 6.5em;
+}
+
+.button1 .try-app {
+    padding: 5px 20px;
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    box-shadow:
+    0.3px 0.3px 0.7px rgba(0, 0, 0, 0.014),
+    0.9px 0.9px 2px rgba(0, 0, 0, 0.02),
+    2.1px 2.1px 4.8px rgba(0, 0, 0, 0.026),
+    7px 7px 16px rgba(0, 0, 0, 0.04);
+    
+}
+
+main {
+    padding: 0 25px;
+    margin-bottom: 35px;
+}
+
+@media (min-width: 1000px) {
+    main {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 70px;
+    }
+}
+
+.main-sect {
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .main-sect {
+        text-align: left;
+    }
+}
+
+.title {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: hsl(192, 100%, 9%);
+    font-weight: 400;
+}
+
+.button2 .get-app {
+    margin: 45px 0px 60px 0px;
+    padding: 12px 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(193, 100%, 96%);
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 
+        0px 1px 1px hsla(322, 100%, 66%, 0.2),
+        1px 2px 2px hsla(322, 100%, 66%, 0.2),
+        2px 4px 4px hsla(322, 100%, 66%, 0.2);
+}
+
+section {
+    background-color: white;
+    padding: 50px 25px 5px 25px;
+}
+
+@media (min-width: 1000px) {
+    #first {
+        padding: 100px 80px 25px 80px;
+    }
+
+    section {
+        padding: 10px 80px 25px 80px;
+    }
+}
+
+.sect-description {
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    padding: 60px 35px 35px 35px;
+    box-shadow: 
+        0px 0px 0px 1px hsla(208, 11%, 55%, 0),
+        0px 0px 1px 2px hsla(208, 11%, 55%, 0),
+        1px 1px 2px 4px hsla(208, 11%, 55%, 0),
+        2px 2px 4px 4px hsla(208, 11%, 55%, 0.1);
+}
+
+@media (min-width: 1000px) {
+    .sect-description {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 150px;
+        justify-items: center;
+        align-items: center;
+        padding: 40px 25px 35px 100px;
+    }
+
+    .grow-together {
+        grid-area: 1/2;
+    }
+
+    .title-paragraph {
+        text-align: left;
+    }
+}
+
+.subtitle {
+    font-size: 22px;
+    margin: 50px 0px 20px 0px;
+}
+
+@media (min-width: 1000px) {
+    .subtitle {
+        margin: 0px;
+    }
+}
+
+.grayish-text {
+    color: hsl(208, 11%, 55%);
+    font-size: 16px;
+}
+
+#last-sect {
+    padding: 50px 15px 5px 15px;
+}
+
+@media (min-width: 1000px) {
+    #last-sect {
+        padding: 30px 350px 5px 350px;
+    }
+}
+
+.lastSect-content {
+    background-color: white;
+    padding: 50px 5px 40px 5px;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 
+        0px 0px 0px 1px hsla(208, 11%, 55%, 0),
+        0px 0px 1px 2px hsla(208, 11%, 55%, 0),
+        1px 1px 2px 4px hsla(208, 11%, 55%, 0),
+        2px 2px 4px 4px hsla(208, 11%, 55%, 0.1);
+}
+
+#lastSect-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button3 .get-app2 {
+    padding: 12px 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(193, 100%, 96%);
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 
+        0px 1px 1px hsla(322, 100%, 66%, 0.2),
+        1px 2px 2px hsla(322, 100%, 66%, 0.2),
+        2px 4px 4px hsla(322, 100%, 66%, 0.2);
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(208, 11%, 55%);
+    font-weight: 700;
+    padding: 140px 20px 50px 20px;
+}
+
+@media (min-width: 1000px) {
+    footer {
+        padding: 140px 100px 50px 100px;
+    }
+}
+
+.white-logo .app-logo2 {
+    width: 10em;
+}
+
+.icons {
+    width: 15px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.icons2 {
+    width: 20px;
+    height: 18px;
+}
+
+.icon-text {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-text {
+    font-size: 16px;
+}
+
+.col2 {
+    margin-top: 60px;
+}
+
+@media (min-width: 1000px) {
+    .col2 {
+        margin-top: 0px;
+        padding-left: 100px;
+    }
+}
+
+.footer-nav {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.col4 {
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .col4 {
+        padding-top: 65px;
+        align-self: start;
+    }
+
+    .col3 {
+        padding-left: 50px;
+    }
+}
+
+.social-links {
+    margin-right: 10px;
+    color: hsl(193, 100%, 96%);    
+}
+
+.fab {
+    border: 2px solid hsl(208, 11%, 55%);
+    border-radius: 50%;
+    padding: 7px 10px;
+}
+
+.fa-twitter {
+    padding: 7px 8px;
+}
+
+.fa-instagram {
+    padding: 7px 8px;
+}
+
+.copyright-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        justify-items: center;
+        align-items: center;
+    }
+
+    .copyright-text {
+        text-align: right;
+        margin-top: 40px;
+    }
+}
+
+    
+.attribution { font-size: 11px; text-align: center; margin-top: 20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
